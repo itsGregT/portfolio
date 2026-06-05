@@ -1,6 +1,6 @@
 
 type Props = {
-    className: string;
+    className?: string;
 }
 
 export default function GithubIcon(props: Props) {

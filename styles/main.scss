@@ -2,13 +2,23 @@
  * Sass 7-1 pattern https://sass-guidelin.es/#the-7-1-pattern 
  */
 
-/*** Base ***/
+/*** Abstracts ***/
+@import "./abstracts/variables";
 
+/*** Base ***/
+@import "./base/base";
+@import "./base/typography";
 
 /*** Components ***/
+@import "./components/hero";
+@import "./components/buttons";
 
 
 /*** Layout ***/
+@import "./layout/footer";
+@import "./layout/header";
+@import "./layout/navigation";
+@import "./layout/grid";
 
 
 /*** Pages ***/
@@ -17,7 +27,5 @@
 /*** Themes ***/
 
 
-/*** Abstracts ***/
-
-
 /*** Vendors ***/
+

@@ -6,7 +6,7 @@ import LinkedInIcon from "@/components/icons/LinkedinIcon";
 export default function Hero() {
     return (
         <section id="home" className="hero">
-            <div className="hero__grid">
+            <div className="hero__grid grid grid--50-50">
                 <div className="hero__left">
                     <h2 className="hero__subtitle">Frontend Engineer * UX Designer * Product Owner</h2>
                     <h1 className="hero__title">I build digital products that solve real problems</h1>
@@ -17,13 +17,15 @@ export default function Hero() {
                     </div>
                 </div>
                 <div className="hero__right">
-                    <Image 
-                        className="hero__media" 
-                        src="/img/greg.jpg" 
-                        alt="Greg Thomas." 
-                        width={500}
-                        height={500}    
-                    />
+                    <div className="hero__right-media">
+                        <Image 
+                            className="hero__media" 
+                            src="/img/greg.jpg" 
+                            alt="Greg Thomas." 
+                            width={500}
+                            height={500}    
+                        />
+                    </div>
                 </div>
             </div>
             <div className="hero__links">
@@ -37,7 +39,7 @@ export default function Hero() {
                 </a>
                 <a href="mailto:gregthomas.dev@gmail.com">
                     <p className="visually-hidden">Send me an email.</p>
-                    <MailIcon />
+                    <MailIcon stroke="yellow" width="32" />
                 </a>
             </div>
         </section>

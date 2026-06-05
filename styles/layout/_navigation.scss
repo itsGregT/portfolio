@@ -1,0 +1,25 @@
+.nav {
+
+}
+
+.nav__items {
+    display: flex;
+    gap: 45px;
+}
+
+.nav__item {
+    font-size: 1.125rem;
+    list-style-type: none;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: $color-text-secondary;
+    padding-bottom: 8px;
+    border-bottom: 3px solid transparent;
+
+    &:hover,
+    &:focus {
+        border-bottom: 3px solid $cyan;
+    }
+}

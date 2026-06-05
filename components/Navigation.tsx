@@ -16,7 +16,6 @@ const navItems = [
 export default function Navigation() {
     return (
         <nav className="nav">
-            <a className="nav__logo" href="#home">Greg Thomas</a>
             <ul className="nav__items">
                 {navItems.map((item, i) => (
                     <li className="nav__item" key={i}>
