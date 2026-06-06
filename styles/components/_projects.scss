@@ -1,0 +1,39 @@
+.projects {
+    padding: 120px 120px;
+}
+
+.project-tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 60px;
+}
+.project-tile {
+    border-radius: 8px;
+    background-color: green;
+}
+
+.project-tile__media {
+    
+}
+
+.project-tile__media-img { 
+
+}
+
+.project-tile__content {
+    padding: 15px;
+}
+
+.project-tile__title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.project-tile__description {
+
+}
+
+.project-tile__tags {
+
+}

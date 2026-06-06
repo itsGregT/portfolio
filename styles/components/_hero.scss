@@ -1,6 +1,6 @@
 .hero {
     color: $color-text-primary;
-    padding: 120px 60px;
+    padding: 120px 120px;
     border-bottom: 2px solid $color-border;
     
 }
@@ -10,7 +10,7 @@
 }
 
 .hero__left {
-
+    
 }
 
 .hero__right {
@@ -26,6 +26,10 @@
     margin-bottom: 15px;
     color: $cyan;
     font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
 }
 
 .hero__description {
@@ -36,37 +40,7 @@
 }
 
 .hero__actions {
-
-}
-
-.hero__right-media {
-    position: relative;
-
-    &:before {
-        content: '';
-        display: block;
-        background: $cyan;
-        width: 500px;
-        height: 500px;
-        position: absolute;
-        left: calc(-10px + 50%);
-        top: calc(-10px + 50%);
-        transform: translate(-50%, -50%);
-        border-radius: 30px;
-    }
-
-    &:after {
-        content: '';
-        display: block;
-        background: $magenta;
-        width: 500px;
-        height: 500px;
-        position: absolute;
-        right: calc(-10px + 50%);
-        bottom: calc(-10px + 50%);
-        transform: translate(-50%, -50%);
-        border-radius: 30px;
-    }
+    margin-bottom: 60px;
 }
 
 .hero__media {
@@ -80,4 +54,7 @@
 .hero__links {
     width: 32px;
     fill: #ccc;
+    display: grid;
+    grid-template-columns: repeat(3, 45px);
+    gap: 45px;
 }
