@@ -1,0 +1,107 @@
+/*
+ *
+ * Small
+ * 360px and wider
+ *
+ */
+@mixin xxsu {
+	@media only screen and (min-width: 22.5em) {
+		@content;
+	}
+}
+
+/*
+ *
+ * Small
+ * 390px and wider
+ *
+ */
+@mixin xsu {
+	@media only screen and (min-width: 24.375em) {
+		@content;
+	}
+}
+
+/*
+ *
+ * Small
+ * 576px and wider
+ *
+ */
+@mixin sm {
+	@media only screen and (min-width: 36em) {
+		@content;
+	}
+}
+
+/*
+ *
+ * Medium
+ * 768px and wider
+ *
+ */
+@mixin md {
+	@media only screen and (min-width: 48em) {
+		@content;
+	}
+}
+
+/*
+ *
+ * Large
+ * 992px and wider
+ *
+ */
+@mixin lg {
+	@media only screen and (min-width: 62em) {
+		@content;
+	}
+}
+
+/*
+ *
+ * Extra large
+ * 1240px and wider
+ *
+ */
+@mixin xlg {
+	@media only screen and (min-width: 77.5em) {
+		@content;
+	}
+}
+
+/*
+ *
+ * Extra Extra large
+ * 1460px and wider
+ *
+ */
+@mixin xxlg {
+	@media only screen and (min-width: 91.25em) {
+		@content;
+	}
+}
+
+/*
+ *
+ * Extra Extra Extra large
+ * 1820px and wider
+ *
+ */
+@mixin xxxlg {
+	@media only screen and (min-width: 113.75em) {
+		@content;
+	}
+}
+
+/*
+ *
+ * Extra Extra Extra large
+ * 1920px and wider
+ *
+ */
+ @mixin xxxxlg {
+	@media only screen and (min-width: 120rem) {
+		@content;
+	}
+}
