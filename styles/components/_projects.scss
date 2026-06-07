@@ -3,10 +3,13 @@
 }
 
 .project-tiles {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
     margin-top: 45px;
+
+    @include lg {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+    }
 }
 
 .project-tile {
@@ -14,6 +17,8 @@
     border: 1px solid $color-border;
     overflow: hidden;
     box-shadow: 0 0 10px 2px #010101;
+    max-width: 536px;
+    margin-bottom: 30px;
 }
 
 .project-tile__media {

@@ -5,7 +5,7 @@ import LinkedInIcon from "@/components/icons/LinkedinIcon";
 
 export default function Hero() {
     return (
-        <section id="home" className="hero">
+        <section id="home" className="hero section">
             <div className="hero__grid grid grid--50-50">
                 <div className="hero__left">
                     <h2 className="hero__subtitle">Frontend Engineer <Dot /> UX Designer <Dot /> Product Owner</h2>

@@ -1,16 +1,32 @@
 .grid {
-  display: grid;
-  gap: 60px;
+    display: grid;
+    gap: 30px;
+
+    @include xlg {
+        gap: 60px;
+    }
 }
 
 .grid--50-50 {
-  grid-template-columns: 1fr 1fr;
+    grid-template-columns: initial;
+
+    @include xlg {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 .grid--60-40 {
-  grid-template-columns: 3fr 2fr;
+    grid-template-columns: initial;
+
+    @include xlg {
+        grid-template-columns: 3fr 2fr;
+    }
 }
 
 .grid--40-60 {
-  grid-template-columns: 2fr 3fr;
+    grid-template-columns: initial;
+
+    @include xlg {
+        grid-template-columns: 2fr 3fr;
+    }
 }

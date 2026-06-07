@@ -1,5 +1,9 @@
 .section {
-    padding: 60px 120px;
+    padding: 30px;
+
+    @include lg {
+        padding: 60px 120px;
+    }
 }
 
 .section__title {

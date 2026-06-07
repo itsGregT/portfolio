@@ -1,15 +1,37 @@
 .nav {
-
+    position: relative;
 }
 
 .nav__items {
-    display: flex;
+    display: none;
     gap: 45px;
+
+    @include md {
+        display: flex;
+    }
+
+    &--mobile {
+        display: block;
+        position: absolute;
+        background: #000;
+        padding: 30px 120px;
+        top: 50px;
+        right: -15px;
+
+        @include md {
+            display: none;
+        }
+    }
 }
 
 .nav__item {
     font-size: 1.125rem;
     list-style-type: none;
+
+    .nav__items--mobile & {
+        margin-bottom: 15px;
+        font-size: 1.5rem;
+    }
 }
 
 .nav__link {
@@ -21,5 +43,16 @@
     &:hover,
     &:focus {
         border-bottom: 3px solid $cyan;
+    }
+}
+
+.nav__action {
+    background: none;
+    color: $color-text-primary;
+    outline: none;
+    border: none;
+    
+    @include md {
+        display: none;
     }
 }
