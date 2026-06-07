@@ -52,7 +52,7 @@
          
 .hero__links {
     width: 32px;
-    fill: #ccc;
+    fill: $color-text-primary;
     display: grid;
     grid-template-columns: repeat(3, 45px);
     gap: 45px;

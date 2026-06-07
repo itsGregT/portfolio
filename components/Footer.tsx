@@ -19,22 +19,28 @@ export default function Footer() {
                     <ul className="footer__social-links-list">
                         <li className="footer__social-link-li">
                             <a className="footer__social-link" href="https://www.linkedin.com/in/itsgregt/">
-                                <LinkedinIcon className="footer__social-link-icon" />
-                                <p className="footer__social-link-text">LinkedIn</p>
+                                <span className="footer__social-link-left">
+                                    <LinkedinIcon className="footer__social-link-icon" />
+                                    <p className="footer__social-link-text">LinkedIn</p>
+                                </span>
                                 <ArrowRight />
                             </a>
                         </li>
                         <li className="footer__social-link-li">
                             <a className="footer__social-link" href="https://github.com/itsGregT">
-                                <GithubIcon className="footer__social-link-icon" />
-                                <p className="footer__social-link-text">GitHub</p>
+                                <span className="footer__social-link-left">
+                                    <GithubIcon className="footer__social-link-icon" />
+                                    <p className="footer__social-link-text">GitHub</p>
+                                </span>
                                 <ArrowRight />
                             </a>
                         </li>
                         <li className="footer__social-link-li">
                             <a className="footer__social-link" href="https://www.linkedin.com/in/itsgregt/">
-                                <FileDown className="footer__social-link-icon" />
-                                <p className="footer__social-link-text">Download Resume</p>
+                                <span className="footer__social-link-left">
+                                    <FileDown className="footer__social-link-icon" />
+                                    <p className="footer__social-link-text">Download Resume</p>
+                                </span>
                                 <ArrowRight />
                             </a>
                         </li>

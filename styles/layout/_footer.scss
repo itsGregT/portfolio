@@ -46,13 +46,21 @@
 
 .footer__social-link {
     display: flex;
-    margin-bottom: 8px;
+    justify-content: space-between;
+    margin-bottom: 15px;
     align-items: center;
+    text-decoration: none;
+    color: $color-text-primary;
+}
+
+.footer__social-link-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .footer__social-link-icon {
     width: 36px;
-    margin-right: 8px;
 }
 
 .footer__social-link-text {
