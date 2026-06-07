@@ -24,7 +24,7 @@ const projects = [
 
 export default function Projects() {
     return (
-        <section id="work" className="section projects">
+        <section id="projects" className="section projects">
             <h2 className="section__subtitle">Featured Projects</h2>
             <p className="section__title">Here are some of my recent works.</p>
             <div className="project-tiles">

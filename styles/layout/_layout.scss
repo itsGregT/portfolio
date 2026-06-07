@@ -1,3 +1,7 @@
+.section {
+    padding: 60px 120px;
+}
+
 .section__title {
     color: $color-text-primary;
     font-size: 2.5rem;
@@ -10,6 +14,10 @@
     font-size: 1.5rem;
     font-weight: 400;
     margin: 0 0 15px;
+
+    &--primary {
+        color: $color-text-primary;
+    }
 }
 
 .section__desc {

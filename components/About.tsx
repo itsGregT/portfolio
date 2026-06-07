@@ -2,7 +2,7 @@ import { ChartNoAxesCombined, Code, Laptop, Users } from "lucide-react";
 
 export default function About() {
     return (
-        <section id="work" className="section projects grid grid--40-60">
+        <section id="about" className="section grid grid--40-60">
             <div className="about__left">
                 <h2 className="section__subtitle">About Me</h2>
                 <p className="section__title">I bridge the gap between business needs and technical solutions.</p>
