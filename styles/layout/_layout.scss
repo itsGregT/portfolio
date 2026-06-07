@@ -1,7 +1,19 @@
 .section__title {
     color: $color-text-primary;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 0 0 30px;
 }
 
 .section__subtitle {
+    color: $cyan;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0 0 15px;
+}
+
+.section__desc {
     color: $color-text-secondary;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
 }

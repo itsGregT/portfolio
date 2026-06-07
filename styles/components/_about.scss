@@ -1,0 +1,46 @@
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about-grid__item {
+    padding: 45px 0 45px 45px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    &:nth-child(1),
+    &:nth-child(2) {
+        border-bottom: 2px solid $color-border;
+    }
+
+    &:nth-child(1),
+    &:nth-child(3) {
+        border-right: 2px solid $color-border;
+    }
+}
+
+.about-grid__icon {
+    font-size: 5rem;
+    background: rgba($magenta, 0.5);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 120px;
+}
+
+.about-grid__title {
+    &--lg {
+        color: $color-text-primary;
+        font-size: 1.75rem;
+        display: block;
+    }
+
+    &--sm {
+        color: $color-text-secondary;
+        font-size: 1.5rem;
+    }
+}
