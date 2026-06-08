@@ -1,46 +1,98 @@
 .about-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    @include lg {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 .about-grid__item {
-    padding: 45px 0 45px 45px;
+    padding: 15px;
     display: flex;
     align-items: center;
     gap: 15px;
 
-    &:nth-child(1),
-    &:nth-child(2) {
-        border-bottom: 2px solid $color-border;
-    }
+    @include lg {
+        padding: 45px 0 45px 45px;
 
-    &:nth-child(1),
-    &:nth-child(3) {
-        border-right: 2px solid $color-border;
+        &:nth-child(1),
+        &:nth-child(2) {
+            border-bottom: 2px solid $color-border;
+        }
+
+        &:nth-child(1),
+        &:nth-child(3) {
+            border-right: 2px solid $color-border;
+        }   
     }
 }
 
 .about-grid__icon {
     font-size: 5rem;
-    background: rgba($magenta, 0.5);
-    width: 120px;
-    height: 120px;
+    
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 0 0 120px;
+    flex: 0 0 80px;
+
+    .about-grid__item:nth-child(1) & {
+        background: rgba($cyan, 0.25);
+
+        .about-grid__icon-svg {
+            stroke: $cyan;
+        }
+    }
+
+    .about-grid__item:nth-child(2) & {
+        background: rgba($magenta, 0.25);
+
+        .about-grid__icon-svg {
+            stroke: $magenta;
+        }
+    }
+
+    .about-grid__item:nth-child(3) & {
+        background: rgba(#09B83E, 0.25);
+
+        .about-grid__icon-svg {
+            stroke: #09B83E;
+        }
+    }
+
+    .about-grid__item:nth-child(4) & {
+        background: rgba(#410093, 0.25);
+
+        .about-grid__icon-svg {
+            stroke: #410093;
+        }
+    }
+
+    @include md {
+        width: 120px;
+        height: 120px;
+        flex: 0 0 120px;
+    }
 }
 
 .about-grid__title {
     &--lg {
         color: $color-text-primary;
-        font-size: 1.75rem;
+        font-size: 1.5rem;
         display: block;
+
+        @include xlg {
+            font-size: 1.75rem;
+        }
     }
 
     &--sm {
         color: $color-text-secondary;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
+
+        @include xlg {
+            font-size: 1.5rem;
+        }
     }
 }

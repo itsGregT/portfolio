@@ -5,7 +5,13 @@
 .project-tiles {
     margin-top: 45px;
 
-    @include lg {
+    @include md {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(2, minmax(220px, 1fr));
+    }
+
+    @include xlg {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 30px;
@@ -19,15 +25,19 @@
     box-shadow: 0 0 10px 2px #010101;
     max-width: 536px;
     margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .project-tile__media {
     background-color: $color-border;
     text-align: center;
+    margin: auto;
 }
 
 .project-tile__media-img { 
-
+    max-width: 100%;
+    height: auto;
 }
 
 .project-tile__content {

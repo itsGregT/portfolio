@@ -38,7 +38,7 @@ export default function Footer() {
                         <li className="footer__social-link-li">
                             <a className="footer__social-link" href="https://www.linkedin.com/in/itsgregt/">
                                 <span className="footer__social-link-left">
-                                    <FileDown className="footer__social-link-icon" />
+                                    <FileDown size="36" />
                                     <p className="footer__social-link-text">Download Resume</p>
                                 </span>
                                 <ArrowRight />

@@ -3,35 +3,47 @@
     position: relative;
     overflow: hidden;
     background: #020202;
-    $footer-decoration-size: 950px;
+    // $footer-decoration-size: 950px;
 
-    &:after {
-        content: '';
-        width: calc($footer-decoration-size * 2);
-        height: $footer-decoration-size;
-        display: block;
-        background: radial-gradient(circle, rgba($cyan, 0.85) 10%, transparent 50%);
-        position: absolute;
-        left: calc((($footer-decoration-size / 2) * -1) * 1.75);
-        bottom: calc((($footer-decoration-size / 2) * -1) * 1.25);
-        z-index: 1;
-    }
+    // &:after {
+    //     content: '';
+    //     width: calc($footer-decoration-size * 2);
+    //     height: $footer-decoration-size;
+    //     display: block;
+    //     background: radial-gradient(circle, rgba($cyan, 0.85) 10%, transparent 50%);
+    //     position: absolute;
+    //     left: calc((($footer-decoration-size / 2) * -1) * 1.75);
+    //     bottom: calc((($footer-decoration-size / 2) * -1) * 1.25);
+    //     z-index: 1;
+    // }
 }
 
 .footer__grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr .75fr;
     // border-bottom: 1px solid $color-border;
-    padding: 60px 120px 0;
+    padding: 60px 30px 0;
     position: relative;
     z-index: 10;
     gap: 30px;
+
+    @include md {
+        padding: 60px 120px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr .75fr;
+    }
 }
 
 .footer__grid-item {
-    &:nth-child(2) {
-        border-right: 1px solid $color-border;
+    margin-bottom: 60px;
+
+    @include md {
+        margin: initial;
+        
+        &:nth-child(2) {
+            border-right: 1px solid $color-border;
+        }
     }
+
+    
 }
 
 .footer__email {
@@ -51,6 +63,16 @@
     align-items: center;
     text-decoration: none;
     color: $color-text-primary;
+    padding: 15px 0;
+
+    @include md {
+        padding: initial;
+    }
+
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+    }
 }
 
 .footer__social-link-left {
@@ -61,6 +83,7 @@
 
 .footer__social-link-icon {
     width: 36px;
+    fill: #fff;
 }
 
 .footer__social-link-text {
@@ -70,9 +93,13 @@
 
 .footer__copyright {
     color: $color-text-primary;
-    padding: 30px 120px;
+    padding: 15px;
     font-weight: 400;
     font-size: .95rem;
     z-index: 10;
     position: relative;
+
+    @include md {
+        padding: 30px 120px;
+    }
 }
