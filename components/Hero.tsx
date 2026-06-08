@@ -34,10 +34,10 @@ export default function Hero() {
                     <div className="hero__right-media">
                         <Image 
                             className="hero__media" 
-                            src="/img/greg.jpg" 
+                            src="/img/Greg-Thomas3.png" 
                             alt="Greg Thomas." 
-                            width={600}
-                            height={600}    
+                            width={640}
+                            height={640}    
                         />
                     </div>
                 </div>
