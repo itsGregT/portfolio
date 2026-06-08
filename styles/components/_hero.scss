@@ -91,3 +91,19 @@
         justify-content: initial;
     }
 }
+
+.hero__link-svg {
+    transition: all 0.25s ease;
+
+    &:hover,
+    &:focus {
+        fill: $cyan;
+    }
+
+    &--alt {
+        &:hover,
+        &:focus {
+            stroke: $cyan;
+        }
+    }
+}

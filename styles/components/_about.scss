@@ -13,6 +13,7 @@
 
     @include lg {
         padding: 45px 0 45px 45px;
+        gap: 30px;
 
         &:nth-child(1),
         &:nth-child(2) {
@@ -28,7 +29,6 @@
 
 .about-grid__icon {
     font-size: 5rem;
-    
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -69,10 +69,11 @@
         }
     }
 
+    $grid-icon-background-size: 90px;
     @include md {
-        width: 120px;
-        height: 120px;
-        flex: 0 0 120px;
+        width: $grid-icon-background-size;
+        height: $grid-icon-background-size;
+        flex: 0 0 $grid-icon-background-size;
     }
 }
 
@@ -89,10 +90,10 @@
 
     &--sm {
         color: $color-text-secondary;
-        font-size: 1.25rem;
+        font-size: 1.125rem;
 
         @include xlg {
-            font-size: 1.5rem;
+            font-size: 1.25rem;
         }
     }
 }

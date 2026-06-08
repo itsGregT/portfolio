@@ -4,21 +4,17 @@ import Image from "next/image";
 const projects = [
     {
         title: "VoxSomnia Website",
-        desc: "VoxSomnia company website",
-        tags: ["React", "Next.js", "Typescript", "SCSS"],
-        img: "/img/voxsomnia.jpg"
+        desc: "Built a modern Next.js website from the ground up, including custom UI development, responsive design, form integrations, analytics tracking, and performance optimizations.",
+        tags: ["Next.js", "Typescript", "SCSS", "Google Analytics", "Mailgun"],
+        img: "/img/voxsomnia.jpg",
+        link: "https://voxsomnia.io/"
     },
     {
-        title: "VoxSomnia Website",
-        desc: "VoxSomnia company website",
-        tags: ["React", "Next.js", "Typescript", "SCSS"],
-        img: "/img/voxsomnia.jpg"
-    },
-    {
-        title: "VoxSomnia Website",
-        desc: "VoxSomnia company website",
-        tags: ["React", "Next.js", "Typescript", "SCSS"],
-        img: "/img/voxsomnia.jpg"
+        title: "Trellis",
+        desc: "Led frontend development, UX design, and product strategy for Trellis, VoxSomnia's Industrial IoT platform that transforms factory data into actionable insights through a unified dashboard.",
+        tags: ["React", "Electron", "Typescript", "SCSS", "Apache ECharts"],
+        img: "/img/trellis.jpg",
+        link: "https://voxsomnia.io/trellis"
     }
 ]
 
@@ -26,10 +22,10 @@ export default function Projects() {
     return (
         <section id="projects" className="section projects">
             <h2 className="section__subtitle">Featured Projects</h2>
-            <p className="section__title">Here are some of my recent works.</p>
+            <p className="section__title">Recent Work</p>
             <div className="project-tiles">
                 {projects.map((project, i) => (
-                    <div key={i} className="project-tile">
+                    <a href={project.link} target="_blank" key={i} className="project-tile">
                         <div className="project-tile__media">
                             <Image 
                                 src={project.img}
@@ -48,7 +44,7 @@ export default function Projects() {
                                 ))}
                             </div>
                         </div>
-                    </div>
+                    </a>
                 ))}
             </div>
         </section>

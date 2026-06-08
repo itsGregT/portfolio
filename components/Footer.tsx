@@ -36,7 +36,7 @@ export default function Footer() {
                             </a>
                         </li>
                         <li className="footer__social-link-li">
-                            <a className="footer__social-link" href="https://www.linkedin.com/in/itsgregt/">
+                            <a className="footer__social-link" href="/img/Greg_Thomas_Resume.pdf" download>
                                 <span className="footer__social-link-left">
                                     <FileDown size="36" />
                                     <p className="footer__social-link-text">Download Resume</p>

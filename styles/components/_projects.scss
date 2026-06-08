@@ -13,7 +13,7 @@
 
     @include xlg {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(3, 1fr);
         gap: 30px;
     }
 }
@@ -27,6 +27,14 @@
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
+    text-decoration: none;
+    transition: all .25s ease;
+
+    &:hover,
+    &:focus {
+        transform: translateY(-15px);
+        box-shadow: 0 0 20px -10px #fff;
+    }
 }
 
 .project-tile__media {

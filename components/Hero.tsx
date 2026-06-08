@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Dot, MailIcon } from 'lucide-react';
+import { ArrowRight, Dot, Download, MailIcon } from 'lucide-react';
 import GitHubIcon from "@/components/icons/GithubIcon";
 import LinkedInIcon from "@/components/icons/LinkedinIcon";
 
@@ -8,25 +8,25 @@ export default function Hero() {
         <section id="home" className="hero section">
             <div className="hero__grid grid grid--50-50">
                 <div className="hero__left">
-                    <h2 className="hero__subtitle">Frontend Engineer <Dot /> UX Designer <Dot /> Product Owner</h2>
-                    <h1 className="hero__title">I build digital products that solve real problems</h1>
-                    <p className="hero__description">I combine product thinking, user experience, and modern frontend development to build scalable, data-drive applications that deliver measurable impact.</p>
+                    <h2 className="hero__subtitle">Frontend Engineer <Dot /> UX Designer <Dot /> Product-minded Developer</h2>
+                    <h1 className="hero__title">Transforming complex systems into intuitive digital experiences.</h1>
+                    <p className="hero__description">I combine modern frontend development, user experience, and product thinking to create digital products that are intuitive, scalable, and built around real user needs.</p>
                     <div className="hero__actions">
-                        <a className="button button--primary" href="#work">View My Work</a>
-                        <a className="button button--secondary" href="" download>Download Resume</a>
+                        <a className="button button--primary" href="#work">View My Work <ArrowRight /></a>
+                        <a className="button button--secondary" href="/img/Greg_Thomas_Resume.pdf" download>Download Resume <Download /></a>
                     </div>
                     <div className="hero__links">
                         <a href="https://github.com/itsGregT" target="_blank" rel="noopener noreferrer">
                             <p className="visually-hidden">View my GitHub profile.</p>
-                            <GitHubIcon />
+                            <GitHubIcon className="hero__link-svg" />
                         </a>
                         <a href="https://linkedin.com/in/itsgregt" target="_blank" rel="noopener noreferrer">
                             <p className="visually-hidden">View my LinkedIn profile.</p>
-                            <LinkedInIcon />
+                            <LinkedInIcon className="hero__link-svg" />
                         </a>
                         <a href="mailto:gregthomas.dev@gmail.com">
                             <p className="visually-hidden">Send me an email.</p>
-                            <MailIcon stroke="white" width="45" height="45" />
+                            <MailIcon className="hero__link-svg--alt" stroke="white" width="45" height="45" />
                         </a>
                     </div>
                 </div>
@@ -34,10 +34,10 @@ export default function Hero() {
                     <div className="hero__right-media">
                         <Image 
                             className="hero__media" 
-                            src="/img/Greg-Thomas3.png" 
+                            src="/img/greg.jpg" 
                             alt="Greg Thomas." 
-                            width={640}
-                            height={640}    
+                            width={480}
+                            height={684}    
                         />
                     </div>
                 </div>

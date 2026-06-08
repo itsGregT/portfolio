@@ -8,6 +8,9 @@
     transition: all .125s ease-in-out;
     width: 100%;
     text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 
     &--primary {
         background: $cyan;
