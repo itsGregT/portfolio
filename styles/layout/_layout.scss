@@ -1,5 +1,7 @@
 .section {
     padding: 30px;
+    max-width: 1920px;
+    margin: auto;
 
     @include lg {
         padding: 60px 120px;

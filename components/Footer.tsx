@@ -18,7 +18,7 @@ export default function Footer() {
                 <div className="footer__grid-item">
                     <ul className="footer__social-links-list">
                         <li className="footer__social-link-li">
-                            <a className="footer__social-link" href="https://www.linkedin.com/in/itsgregt/">
+                            <a className="footer__social-link" target="_blank" href="https://www.linkedin.com/in/itsgregt/">
                                 <span className="footer__social-link-left">
                                     <LinkedinIcon className="footer__social-link-icon" />
                                     <p className="footer__social-link-text">LinkedIn</p>
@@ -27,7 +27,7 @@ export default function Footer() {
                             </a>
                         </li>
                         <li className="footer__social-link-li">
-                            <a className="footer__social-link" href="https://github.com/itsGregT">
+                            <a className="footer__social-link" target="_blank" href="https://github.com/itsGregT">
                                 <span className="footer__social-link-left">
                                     <GithubIcon className="footer__social-link-icon" />
                                     <p className="footer__social-link-text">GitHub</p>
