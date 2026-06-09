@@ -13,8 +13,25 @@ const sora = Sora({
 });
 
 export const metadata: Metadata = {
-  title: "Greg Thomas | Portfolio",
-  description: "Greg Thomas is  Frontend Engineer, UX Designer, and Product Owner",
+  title: "Greg Thomas | Frontend Engineer & UX Designer",
+  description: "Portfolio of Greg Thomas, a Chicago based Frontend Engineer and UX Designer with expertise in product strategy, modern web applications, and user-centered design.",
+  openGraph: {
+        title: "Greg Thomas | Frontend Engineer & UX Designer",
+        description:
+            "Frontend Engineer, UX Designer, and Product Owner specializing in transforming complex workflows and data into intuitive digital experiences.",
+        url: "https://www.gregthomas.me",
+        siteName: "Greg Thomas Portfolio",
+        images: [
+            {
+                url: "/opengraph-image.png",
+                width: 1200,
+                height: 630,
+                alt: "Greg Thomas portfolio preview image",
+            },
+        ],
+        locale: "en_US",
+        type: "website",
+    },
 };
 
 export default function RootLayout({
