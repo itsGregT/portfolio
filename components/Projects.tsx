@@ -3,18 +3,18 @@ import Image from "next/image";
 
 const projects = [
     {
+        title: "Trellis",
+        desc: "Designed and developed the frontend architecture for an Industrial IoT platform that transforms manufacturing data into actionable insights through real-time dashboards, analytics, and alerts.",
+        tags: ["React", "Electron", "Typescript", "SCSS", "Apache ECharts"],
+        img: "/img/trellis.jpg",
+        link: "https://voxsomnia.io/trellis"
+    },
+    {
         title: "VoxSomnia Website",
         desc: "Built a modern Next.js website from the ground up, including custom UI development, responsive design, form integrations, analytics tracking, and performance optimizations.",
         tags: ["Next.js", "Typescript", "SCSS", "Google Analytics", "Mailgun"],
         img: "/img/voxsomnia.jpg",
         link: "https://voxsomnia.io/"
-    },
-    {
-        title: "Trellis",
-        desc: "Led frontend development, UX design, and product strategy for Trellis, VoxSomnia's Industrial IoT platform that transforms factory data into actionable insights through a unified dashboard.",
-        tags: ["React", "Electron", "Typescript", "SCSS", "Apache ECharts"],
-        img: "/img/trellis.jpg",
-        link: "https://voxsomnia.io/trellis"
     }
 ]
 

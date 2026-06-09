@@ -6,7 +6,7 @@ export default function About() {
             <div className="about__left">
                 <h2 className="section__subtitle">About Me</h2>
                 <p className="section__title">Turning Complex Problems into Intuitive Experiences</p>
-                <p className="section__desc">For more than a decade, I've worked at the intersection of design and engineering, helping teams turn complex ideas into intuitive digital products. My experience spans SaaS platforms, industrial IoT, high-traffic e-commerce, and custom business applications.</p>
+                <p className="section__desc">For more than a decade, I've worked at the intersection of design and engineering, designing user experiences, architecting frontend solutions, and building products from concept to deployment. My experience spans SaaS platforms, industrial IoT, high-traffic e-commerce, and custom business applications.</p>
             </div>
             <div className="about__right">
                 <div className="about-grid">
@@ -21,7 +21,7 @@ export default function About() {
                         <span className="about-grid__icon"><Code className="about-grid__icon-svg" stroke="white" width="50" height="50" /></span>
                         <p className="about-grid__title">
                             <span className="about-grid__title--lg">10+ years</span>
-                            <span className="about-grid__title--sm">Frontend Engineering</span>
+                            <span className="about-grid__title--sm">Frontend Engineering & Application Architecture</span>
                         </p>
                     </div>
                     <div className="about-grid__item">
