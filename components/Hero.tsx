@@ -12,7 +12,7 @@ export default function Hero() {
                     <h1 className="hero__title">Transforming complex systems into intuitive digital experiences.</h1>
                     <p className="hero__description">I combine modern frontend development, user experience, and product thinking to create digital products that are intuitive, scalable, and built around real user needs.</p>
                     <div className="hero__actions">
-                        <a className="button button--primary" href="#work">View My Work <ArrowRight /></a>
+                        <a className="button button--primary" href="#projects">View My Work <ArrowRight /></a>
                         <a className="button button--secondary" href="/img/Greg_Thomas_Resume.pdf" download>Download Resume <Download /></a>
                     </div>
                     <div className="hero__links">
