@@ -1,6 +1,7 @@
 import { ArrowRight, FileDown } from "lucide-react";
 import GithubIcon from "./icons/GithubIcon";
 import LinkedinIcon from "./icons/LinkedinIcon";
+import CodePenIcon from "./icons/Codepen";
 
 export default function Footer() {
     return (
@@ -31,6 +32,15 @@ export default function Footer() {
                                 <span className="footer__social-link-left">
                                     <GithubIcon className="footer__social-link-icon" />
                                     <p className="footer__social-link-text">GitHub</p>
+                                </span>
+                                <ArrowRight />
+                            </a>
+                        </li>
+                        <li className="footer__social-link-li">
+                            <a className="footer__social-link" target="_blank" href="https://codepen.io/itsGregT" download>
+                                <span className="footer__social-link-left">
+                                    <CodePenIcon className="footer__social-link-icon" />
+                                    <p className="footer__social-link-text">Codepen</p>
                                 </span>
                                 <ArrowRight />
                             </a>
