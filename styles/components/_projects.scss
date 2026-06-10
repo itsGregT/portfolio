@@ -13,7 +13,7 @@
 
     @include xlg {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, minmax(380px, 1fr));
         gap: 30px;
     }
 }
@@ -29,6 +29,8 @@
     margin-right: auto;
     text-decoration: none;
     transition: all .25s ease;
+    display: block;
+    width: 100%;
 
     &:hover,
     &:focus {
@@ -51,6 +53,9 @@
 .project-tile__content {
     padding: 15px;
     background-color: $color-background-alt2;
+    min-height: 225px;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-tile__title {
@@ -68,15 +73,16 @@
 }
 
 .project-tile__tags {
-    
-
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: auto;
 }
 
 .project-tile__tag {
     color: $color-text-primary;
     background: $color-border;
     border: 1px solid $color-border;
-    margin-right: 8px;
     padding: 2px 8px;
     border-radius: 4px;
 }

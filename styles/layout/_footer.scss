@@ -52,6 +52,12 @@
     color: $cyan;
     margin-top: 30px;
     display: block;
+    transition: all .25s ease-in-out;
+
+    &:focus,
+    &:hover {
+        color: $color-text-primary;
+    }
 }
 
 .footer__social-link-li {
@@ -74,6 +80,7 @@
     &:hover,
     &:focus {
         text-decoration: underline;
+        color: $cyan;
     }
 }
 
@@ -86,10 +93,14 @@
 .footer__social-link-icon {
     width: 36px;
     fill: #fff;
+
+    .footer__social-link:hover &,
+    .footer__social-link:focus & {
+        fill: $cyan;
+    }
 }
 
 .footer__social-link-text {
-    color: $color-text-secondary;
     text-decoration: none;
 }
 
